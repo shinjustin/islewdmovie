@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Search | 
+{% endblock title %}
+{% block content %}
+{% for result in results %}
+<p>
+</p>
+<div class="d-flex">
+    <div class="flex-shrink-0">
+        {% if result.i %}
+<a href="{{ url_for('result', tid=result.id) }}">
+        <img height="120px" src="{{ result.i.imageUrl }}">
+</a>
+        {% endif %}
+    </div>
+    <div class="flex-grow-1 ms-3">
+        <a href="{{ url_for('result', tid=result.id) }}">{{ result.l }} ({{ result.y }})</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

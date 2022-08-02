@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+Results | 
+{% endblock title %}
+{% block content %}
+{% for result in results %}
+<p>{{ result.name }}</p>
+<p
+        style="color:
+                 {% if result.severity == 'None' %}
+                 green
+                 {% elif result.severity == 'Mild' %}
+                 yellow
+                 {% elif result.severity == 'Moderate' %}
+                 orange
+                 {% elif result.severity == 'Severe' %}
+                 red
+                 {% endif %} 
+                 "
+>{{ result.severity }}</p>
+<p>{{ result.percent }}% - {{ result.vote }} out of {{ result.outof }} agree</p>
+{% for scene in result.scenes %}
+<p>{{ scene }}</p>
+{% endfor %}
+{% if result.spoilers %}
+<details>
+    <summary>Spoilers:</summary>
+{% for scene in result.spoilers %}
+<p style="color: red">{{ scene }}</p>
+{% endfor %}
+{% endif %}
+</details>
+<hr>
+{% endfor %}
+{% endblock content %}
