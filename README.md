@@ -1,4 +1,6 @@
-# Is Lewd Movie: Check if a Movie or TV Show is Safe to Watch with your Parents or Kids
+# Is Lewd Movie
+
+*Is Lewd Movie*: Check if a Movie or TV Show is Safe to Watch with your Parents or Kids
 
  Just in case you wanted to avoid watching lewd scenes with your parents... 
 
@@ -18,21 +20,21 @@
 
 Create a virtual environment.
 
-`bash
+```bash
 virtualenv venv
-`
+```
 
 Install dependencies:
 
-`bash
+```bash
 pip install -r requirements.txt
-`
+```
 
 Start Flask server:
 
-`bash
+```bash
 ./run.sh
-`
+```
 
 Then navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000):
 
