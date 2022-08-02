@@ -18,7 +18,7 @@
 
 ## Installation
 
-Create a virtual environment.
+Create a virtual environment:
 
 ```bash
 virtualenv venv
