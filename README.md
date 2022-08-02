@@ -1,6 +1,6 @@
-# Is Lewd Movie
+# Is Lewd Movie?
 
-*Is Lewd Movie*: Check if a Movie or TV Show is Safe to Watch with your Parents or Kids
+**Is Lewd Movie**: Check if a movie or tv show is safe to watch with your parents or kids
 
  Just in case you wanted to avoid watching lewd scenes with your parents... 
 
